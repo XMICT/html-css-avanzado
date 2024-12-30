@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../root.css">
+    <title>Box Sizing</title>
+</head>
+<body>
+    <h1>Box Sizing</h1>
+    <hr>
+    <p>Box Sizing es una propiedad de la caja que permite definir como se calculara el tamaño de la misma, existen dos posibles valores para infresar</p>
+    <ul>
+        <li><strong>content-box</strong>(default): Introduce de forma acumulativa los tamaños que se ingresan en la caja (content, padding, border), por lo que la caja se hace cada vez mas grande</li>
+        <li><strong>border-box</strong>: Colapsa el contenido de la caja para que al momento de ingresar el padding y border este adapte el contenido y el tamaño de la caja nunca cambie</li>
+    </ul>
+
+    <div class="container-example">
+        <div class="container" id="border-box">
+            <h2>Border-box</h2>
+            <p>#border-box{
+                box-sizing: border-box;
+                
+                border: 10px solid black;
+                padding: 50px;
+            }</p>
+        </div>
+        <div class="container" id="content-box">
+            <h2>Content-box</h2>
+            <p>#border-box{
+                box-sizing: border-box;
+                
+                border: 10px solid black;
+                padding: 50px;
+            }</p>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <p>Los dos elementos contienen las mismas propiedades, la unica diferencia es que ahora el contenido del border-box es mas pequeño</p>
+</body>
+</html>

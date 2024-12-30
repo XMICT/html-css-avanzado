@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../css/root.css">
+    <title>Formularios avanzados</title>
+</head> 
+<body>
+    <main>
+        <div>
+            <h1>Formularios avanzados</h1>
+            <hr>
+
+            <section>
+                <p>En este apartado conoceremos <strong>5 elementos</strong> html que nos permiten realizar formularios mas avanzados.</p>
+
+                <ul>
+                    <li>textarea: Permite ingresar al usuario multiples lineas de texto, y adecuar su campo conforme se va escribiendo.</li>
+                    <li>select: Permite al usuario desplegar una lista con valores predeterminados para seleccionar</li>
+                    <li>datalist: Permite al usuario ingresar texto y desplegar una lista con autocompletado</li>
+                    <li>fieldset & legend: Permite seccionar un formulario y definirle un nombre</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Textarea</h2>
+                <h3>Propiedades</h3>
+                <ul>
+                    <li><strong>disable:</strong>: Desactiva el campo y evita el envio de informacion</li>
+                    <li><strong>read-only</strong>: Activa el campo, pero no puede editar su contenido</li>
+                    <li><strong>max-length</strong>: Asigna un limite para ingresar caracteres</li>
+                    <li><strong>resize(style)</strong>: Modifica el comportamiento de la caja, por defecto esta puede cambiar de tamaño</li>
+                </ul>
+                <h3>Etiqueta</h3>
+                <div class="code-container">
+                    <code lang="html">
+                        < textarea > rows="8" maxlength="50" name="message" id="message" placeholder="Ingresa tu mensaje"> </ textarea >
+                    </code>
+                </div>
+            </section>
+
+            <section>
+                
+            </section>
+            <section>
+                <h2>Ejemplo</h2>
+                <div class="form-example">
+                    <h2 class="">Formulario de <br> contacto</h2>
+                    <form>
+                        <fieldset>
+                            <legend>Informacion basica</legend>
+                            <!--Simple inputs-->
+                            <div class="form-input">
+                                <label for="name">Nombre
+                                    <br>
+                                    <input type="text" placeholder="John Doe" id="name">
+                                </label>
+                            </div>
+                            <div class="form-input">
+                                <label for="email">Email
+                                    <br>
+                                    <input type="email" placeholder="example@email.com" id="email">
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <!--Select-->
+                        <label for="type-person">Tipo de persona
+                            <select name="type-person" id="type-person">
+                                <option value="option-1">Trabajador</option>
+                                <option value="option-2">Estudiante</option>
+                                <option value="option-3">Ninguno</option>
+                            </select>
+                        </label>
+
+                        <!--DataList-->
+                        <label for="social">Me conociste en
+                            <input type="text" list="social-media" id="social">
+                            <datalist id="social-media">
+                                <option value="Youtube">Me conociste por medio de Youtube</option>
+                                <option value="Instagram">Me conociste por medio de Instagram</option>
+                                <option value="Facebook">Me conociste por medio de Facebook</option>
+                                <option value="Otros">Me conociste por medio de Otros</option>
+                            </datalist>
+                        </label>
+
+                        <!--Textarea-->
+                        <div class="form-input">
+                            <label for="message">Mensaje
+                                <br>
+                                <textarea rows="8" maxlength="50" name="message" id="message" placeholder="Ingresa tu mensaje"></textarea>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+

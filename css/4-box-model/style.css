@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins';
+}
+
+.container_form{
+    margin: 10%;
+}
+
+.form{
+    position: relative;
+    border: 1px solid gainsboro;
+    padding: 0 5% 5% 5%;
+    border-radius: 10px;
+}
+
+.form_input{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form_input--btn{
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+
+    width: 50%;
+    background-color: rgb(79, 158, 255);
+    color: white;
+    font-weight: bolder;
+}
+
+.form_props{
+    position: absolute;
+    background-color: gray;
+    opacity: 0.5;
+    padding: 6px 5px;
+    border-radius: 5px;
+}
+
+#form_props--content{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#form_props--padding{
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#form_props--margin{
+    left: -5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#form_props--border{
+    top: 0;
+    transform: translate(-50%, -50%);
+}

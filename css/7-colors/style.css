@@ -1,0 +1,28 @@
+*{
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.container-colors{
+    display: flex;
+    gap: 10%;
+}
+
+.colors{
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 12px;
+
+
+    text-align: center;
+}
+
+#color-rgb{
+    background-color:rgb(187, 30, 30);
+}
+#color-hex{
+    background-color: #a52a2a;
+}
+#color-hsl{
+    background-color: hsl(240, 100%, 80%);
+}

@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    color: #ccc;
+}
+
+body{
+    font-family: 'poppins';
+    margin: 0;
+    background-image: linear-gradient(to bottom,#110b41, #10101c);
+    background-color: #10101c;
+    background-repeat: no-repeat;
+}
+
+main{
+    max-width: 990px;
+    margin: auto;
+}
+
+div{
+    margin: 0 24px;
+}
+
+video{
+    width: 100%;
+    border-radius: 12px;
+}
+
+audio{
+    width: 100%;
+    height: 36px;
+}
+
+li{
+    color: #7664ff;
+}
+
+.subrayado{
+    text-decoration: underline;
+}

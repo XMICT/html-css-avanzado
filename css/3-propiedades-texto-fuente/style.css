@@ -1,0 +1,24 @@
+.example{
+    background-color: gainsboro;
+    padding: 5px 20px;
+    border-radius: 10px;
+}
+
+.example-text > p{
+    color: gray;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: start;
+    line-height: 1.4;
+    letter-spacing: 2px;
+}
+
+p > span {
+    text-decoration: line-through;
+    color: black;
+}
+
+.example-fonts{
+    font-family: 'poppins';
+}

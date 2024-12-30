@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../../css/root.css">
+    <title>Enlaces avanzados</title>
+</head> 
+<body>
+    <main>
+        <div>
+            <h1>Audio y video</h1>
+            <hr>
+            <p>Las etiquetas de audio y video permiten ver y/o escuchar contenido mp3, mp4, etc., Estas contienen las siguientes propiedades y atributos </p>
+            <ul>
+                <li>controls: Agrega controles de pausa/reproduccion, volumen, pantalla completa, etc.</li>
+                <li>autoplay y muted: Reproduce automaticamente el video</li>
+                <li>loop: Reproduce el video en ciclo</li>
+                <li>src="ancort": Ingresar la ubicacion del video</li>
+            </ul>
+
+            <h2>Ejemplo</h2>
+            <video 
+                controls 
+                autoplay 
+                loop
+                muted 
+                translate="yes" 
+                src="../../../assets/video/test-video.mp4">
+                <track 
+                    src=""
+                    default
+                    kind="captions"
+                    srclang="es"
+                    label="Español "
+                ></track>
+                El navegador no soporta el video
+            </video>
+            <br>
+            <br>
+            <audio autoplay muted controls src="../../../assets/video/test-video.mp4"></audio>
+        </div>
+    </main>
+</body>
+</html>
+

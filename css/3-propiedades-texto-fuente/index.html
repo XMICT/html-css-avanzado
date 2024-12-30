@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../root.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Propiedades del Texto  y fuente</title>
+</head>
+<body>
+    <h1>Propiedades del Texto  y fuente</h1>
+    <p>Las etiquetas que continen texto, pueden modificarse las siguientes propiedades</p>
+    <ul>
+        <li>color: Cambia el color del texto</li>
+        <li>font-family: Cambia la fuente de la letra;</li>
+        <li>font-weight: Modifica el grosor de la letra;</li>
+        <li>font-style: Modifica el estilo de la letra (normal, cursiva);</li>
+        <li>text-align: Modifica la alineacion del texto (inicio, centro, final)</li>
+        <li>line-height: Modifica el alto del renglon;</li>
+        <li>letter-spacing: Modifica el espaciado por letra del texto;</li>
+    </ul>
+    <br>
+    <div class="example example-text">
+        <h2>Ejemplo de Prueba</h2>
+        <p id="paraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi rerum praesentium dignissimos odio possimus facilis placeat delectus explicabo itaque illo, ab odit consequuntur <span>nesciunt</span>, iusto distinctio soluta dolorem aliquam quam?</p>
+    </div>
+    <br>
+    <div class="example example-fonts">
+        <h2>Fuentes de Texto externas</h2>
+        <p>Te permite añadir cualquier fuente y catalogarla por ancho de letra</p>
+        <p>@font-face {
+            <br>
+            font-family: 'Poppins';
+            <br>
+            src: url(../../assets/fonts/Poppins-Thin.ttf) format('truetype');
+            <br>
+            font-weight: 100;
+            <br>
+        }</p>
+        <ul>
+            <li class="example-item" style="font-weight: 100;">Poppins Thin - 100</li>
+            <li class="example-item" style="font-weight: 400;">Poppins Regular - 400</li>
+            <li class="example-item" style="font-weight: 600;">Poppins Bold - 600</li>
+            <li class="example-item" style="font-weight: 700;">Poppins Extra Bold - 700</li>
+            <li class="example-item" style="font-weight: 900;">Poppins Black - 900</li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+*{
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+form{
+    margin: 100px;
+    padding: 25px 100px;
+
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+}
+
+input{
+    width: 100%;
+    margin: 12px 0;
+    padding: 8px 4px;
+
+    border: 0;
+    border-bottom: 1px solid gray;
+    border-radius: 5px
+}
+
+.btn-submit{
+    background-color: rgb(255, 140, 140);
+    border: 0;
+    width: min-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.container-border-desigual{
+    display: flex;
+    gap: 1%;
+    width: 100%;
+    height: 100px;
+}
+
+.div-example{
+    width: 100%;
+    height: 50px;
+
+    background-color: blue;
+}
+
+.border-normal{
+    border: 5px solid black;
+}
+
+.border-normal-redondeado{
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.border-desigual{
+    text-align: center;
+    padding: 10px;
+}
+
+#border-desigual-top{
+    background-color: red;
+    border-top: 5px solid black;
+    border-top-left-radius: 10px;
+}
+#border-desigual-right{
+    border-right: 5px solid black;
+    border-top-right-radius: 10px;
+    background-color: green;
+}
+#border-desigual-bottom{
+    border-bottom: 5px solid black;
+    border-bottom-right-radius: 10px;
+    background-color: brown;
+}
+#border-desigual-left{
+    border-left: 5px solid black;
+    border-bottom-left-radius: 10px;
+    background-color: purple;
+}

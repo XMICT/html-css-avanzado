@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Medidas en CSS</h1>
+    <hr>
+    <p>Las medidas en CSS pueden derivarse de dos formas</p>
+    <ul>
+        <li><strong>Absolutas</strong>: px, mm, cm, in (Estas ultimas 3 son en caso que la pagina tenga que imprimirse)</li>
+        <li><strong>Relativas</strong></li>
+        <ul>
+            <li>Cajas</li>
+            <ul>
+                <li>Porcentaje: Si se define un porcentaje es porque la mediada sera respecto al contenedor padre</li>
+                <li>vw: Viewport width definira el tamaño del elemento respecto al <strong>ancho</strong> total de la pantalla</li>
+                <li>vh: Viewport height definira el tamaño del elemento respecto al <strong>alto</strong> total de la pantalla</li>
+            </ul>
+            <li>Texto:</li>
+            <ul>
+                <li>em: Se utiliza cuando se define un tamaño en el contenedor como es la fuente 12px y si se requiere que un elemento hijo tenga la mitad de este tamaño se declara como 0.5 em = 6px</li>
+                <li>rem: Rem funciona casi igual al em, solo que rem se ubica en la etiqueta mas alta de la pagina (html)</li>
+            </ul>
+        </ul>
+    </ul>
+
+    <div class="container-em">
+        <h2>Ejemplo con em (2em)</h2>
+        <p>Tamaño definido en la caja: 16px (1em)</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet ratione laborum soluta quam est vero modi, sint autem iure provident ipsa officiis, corrupti delectus ipsam maxime harum mollitia dolores. (0.5em)</p>
+    </div>
+
+    <div class="container-rem">
+        <h2>Ejemplo con rem</h2>
+        <p>Tamaño definido en etiqueta html</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eveniet ratione laborum soluta quam est vero modi, sint autem iure provident ipsa officiis, corrupti delectus ipsam maxime harum mollitia dolores.</p>
+    </div>
+</body>
+</html>

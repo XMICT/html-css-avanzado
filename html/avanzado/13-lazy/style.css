@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    color: #ccc;
+
+}
+
+body{
+    font-family: 'poppins';
+    margin: 0;
+    background-image: linear-gradient(to bottom,#110b41, #10101c);
+    background-color: #10101c;
+    background-repeat: no-repeat;
+}
+
+main{
+    max-width: 990px;
+    margin: auto;
+}
+
+div{
+    margin: 0 24px;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+section{
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+section > div {
+    margin: 0;
+}
+
+img{
+    width: 100%;
+    border-radius: 24px;
+}

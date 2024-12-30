@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-banner">
+        <p class="name">Carlos Guardiola</p>
+    </div>
+    <div class="container">\
+        <h1>Backgrounds</h1>
+        <hr>
+        <p>El brackground es un fondo que puede contener cualquier elemento, este puede conformarse de las siguientes propiedades</p>
+
+        <h2>Background Gradient</h2>
+        <p>Los gradientes se usan habitualmente para ponerse por encima de un texto</p>
+        <div class="container-example">
+            <div style="background: linear-gradient(black, rgb(248, 33, 33));" class="background-gradient"></div>
+            <div style="background: radial-gradient(black, rgb(248, 33, 33));" class="background-gradient"></div>
+            <div style="position: relative; background: linear-gradient(to top, #000E, transparent);" class="background-gradient">
+                <h1 style="position: absolute; bottom: 10px; margin: 0 50px; color: white;">Hola Mundo</h1>
+            </div>
+        </div>
+        
+        <h2>Orientaciones del background</h2>
+        <p>Los gradientes se usan habitualmente para ponerse por encima de un texto</p>
+        <div class="container-example">
+            <div style="background: linear-gradient(to top, black, rgb(248, 33, 33));" class="background-gradient"></div>
+            <div style="background: radial-gradient(to bottom,black, rgb(248, 33, 33));" class="background-gradient"></div>
+            <div style="position: relative; background: linear-gradient(to top, #000E, transparent);" class="background-gradient">
+                <h1 style="position: absolute; bottom: 10px; margin: 0 50px; color: white;">Hola Meundo</h1>
+            </div>
+        </div>
+
+        <h2>background-image</h2>
+        <p>Ingresa una ruta interna o externa para cargar una imagen, sus posibles valores pueden ser</p>
+        <ul>
+            <li>Ruta interna: url(../../assets/images/banner.png)</li>
+            <li>Ruta externa</li>
+        </ul>
+
+        <div class="container-example">
+            <div class="background-image tron-image"></div>
+            <div class="background-image yo"></div>
+        </div>
+
+
+        <h2>background-attachment</h2>
+        <p>Permite hacer una animacion en donde la imagen se queda estatica al realizar el scroll</p>
+        <div style="display: flex;">
+            <h3 style="width: 100%; text-align: center;">Sin fixed</h3>
+            <h3 style="width: 100%; text-align: center;">Con fixed</h3>
+        </div>
+        <div class="container-example">
+            <div class="background-attachment tron-image"></div>
+            <div class="background-attachment yo"></div>
+        </div>
+        <h2>background-position</h2>
+        <div style="display: flex;">
+            <h3 style="width: 100%; text-align: center;">left</h3>
+            <h3 style="width: 100%; text-align: center;">top</h3>
+            <h3 style="width: 100%; text-align: center;">right</h3>
+            <h3 style="width: 100%; text-align: center;">bottom</h3>
+            <h3 style="width: 100%; text-align: center;">center</h3>
+        </div>
+        <div class="container-example">
+            <div style="background-position: left;" class="background-position tron-image"></div>
+            <div style="background-position: top;" class="background-position tron-image"></div>
+            <div style="background-position: right;" class="background-position tron-image"></div>
+            <div style="background-position: bottom;" class="background-position tron-image"></div>
+            <div style="background-position: center;" class="background-position tron-image"></div>
+        </div>
+        <h2>background-size</h2>
+        <p>La propiedad background-size, permite ajustar la imagen de fondo al tamadel contenedor</p>
+        <ul>
+            <li>background-size: <strong>100%;</strong> - Ajusta la imagen al ancho del contenedor (hace efecto zoom) y si el alto es mas grande que la imagen, repite automaticamente la imagen</li>
+            <li>background-size: <strong>contain;</strong> - Se ajusta al tamano del contenedor, para que almenos repita una sola vez la imagen</li>
+            <li>background-size: <strong>cover;</strong> - Ajusta la imagen del ancho y del alto del contenedor (hace efecto zoom)</li>
+        </ul>
+        <div style="display: flex;">
+            <h3 style="width: 100%; text-align: center;">100%</h3>
+            <h3 style="width: 100%; text-align: center;">contain</h3>
+            <h3 style="width: 100%; text-align: center;">cover</h3>
+        </div>
+        <div class="container-example">
+            <div style="background-size: 100%;" class="background-size tron-image"></div>
+            <div style="background-size: contain;" class="background-size tron-image"></div>
+            <div style="background-size: cover;" class="background-size tron-image"></div>
+        </div>
+        <h2>background-repeat</h2>
+        <div style="display: flex;">
+            <h3 style="width: 100%; text-align: center;">no-repeat</h3>
+            <h3 style="width: 100%; text-align: center;">repeat</h3>
+            <h3 style="width: 100%; text-align: center;">repeat-x</h3>
+            <h3 style="width: 100%; text-align: center;">repeat-y</h3>
+        </div>
+        <div class="container-example">
+            <div style="background-repeat: no-repeat;" class="background-repeat tron-image"></div>
+            <div style="background-repeat: repeat;" class="background-repeat tron-image"></div>
+            <div style="height: 200px; background-repeat: repeat-x;" class="background-repeat tron-image"></div>
+            <div style="background-repeat: repeat-y;" class="background-repeat tron-image"></div>
+        </div>
+        
+    </div>
+</body>
+</html>

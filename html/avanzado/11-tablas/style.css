@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    color: #bbb;
+}
+
+body{
+    font-family: 'poppins';
+    margin: 0;
+    background-image: linear-gradient(to bottom,#110b41, #10101c);
+    background-color: #10101c;
+    background-repeat: no-repeat;
+}
+
+main{
+    max-width: 990px;
+    margin: auto;
+}
+
+div{
+    margin: 0 24px;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+    border-spacing: 0px;
+}
+
+th, td{
+    border-bottom: 1px solid #ccc;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
+}
+
+th{
+    color: white;
+    font-weight: 400;
+}
+
+.row-decoration{
+    background-color: #110b41;
+}
