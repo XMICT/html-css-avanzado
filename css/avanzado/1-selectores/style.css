@@ -1,0 +1,33 @@
+body{
+    font-family: 'poppins';;
+}
+
+img{
+    width: 200px;
+}
+
+img[src$="Yo.png"]{
+    border: 1px solid red;
+}
+
+section li{
+    color: red;
+}
+
+section > li{
+    color: #0f0;
+}
+
+pre{
+    background-color: #0003;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+a + p {
+    color: #00f;
+}
+
+br ~ p {
+    color: #f0f;
+}

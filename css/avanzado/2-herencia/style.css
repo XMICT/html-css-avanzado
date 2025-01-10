@@ -1,0 +1,36 @@
+body{
+    font-family: 'poppins';
+
+    color: #0009;
+}
+
+ul{
+    color: green;
+}
+
+.herencia__inherit{
+    font-family: inherit;
+}
+.herencia__initial{
+    font-family: initial;
+    color: initial;
+}
+.herencia__unset{
+    font-family: unset;
+}
+.herencia__revert{
+    font-family: revert;
+}
+
+.text-area__inherit{
+    font-family: inherit;
+}
+
+textarea{
+    width: 100%;
+}
+
+.text-area{
+    display: flex;
+    gap: 10px;
+}

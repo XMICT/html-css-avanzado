@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../root.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Desbordamiento (Overflow) y TextOverflow</h1>
+        <p>El desbordamiento en CSS es uno de los problemas principales a la hora de trabjar con contenedores, esto debido a que si el contenido es mayor al espacio del contenedor, este puede desbordarse</p>
+        <h2>Propiedad Overflow</h2>
+        <hr>
+        <h3>Ejemplo</h3>
+        <p class="example-overflow">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit enim distinctio ea dolores, consectetur quia aspernatur inventore dicta corrupti modi officiis dolorum harum odit praesentium molestiae molestias accusamus ad, corporis voluptates soluta nihil. Ut ex rerum assumenda, facilis error labore explicabo cupiditate ipsum maxime aliquid fuga adipisci rem quas molestias maiores beatae at impedit sed! Similique magni accusamus doloremque ullam.
+        </p>
+        <br>
+        <br>
+        <h3>Solucion</h3>
+        <p>Para evitar que esto suceda, existe la propiedad overflow con el valor hidden, scroll y auto que detectan el tamaño del contenido el tamaño de la caja</p>
+        <div class="solutions">
+            <div class="solutions__content">
+                <h3 class="solutions__title">Hidden</h3>
+                <h4 class="solutions__subtitle">Corta el contenido</h4>
+                <p id="solution-hidden" class="solutions__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis pariatur cupiditate aut placeat voluptatem dignissimos vero autem numquam facilis similique.</p>
+            </div>
+            <div class="solutions__content">
+                <h3 class="solutions__title">Scroll</h3>
+                <h4 class="solutions__subtitle">Genera un scroll en el contenedor</h4>
+                <p id="solution-scroll" class="solutions__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis pariatur cupiditate aut placeat voluptatem dignissimos vero autem numquam facilis similique.</p>
+            </div>
+            <div class="solutions__content">
+                <h3 class="solutions__title">Auto</h3>
+                <h4 class="solutions__subtitle">No genera el scroll hasta que lo necesite</h4>
+                <p id="solution-auto" class="solutions__body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis pariatur cupiditate aut placeat voluptatem dignissimos vero autem numquam facilis similique.</p>
+            </div>
+        </div>
+        <h3>codigo</h3>
+        <pre>
+<code>#solution-hidden{</code>
+<code>    overflow: hidden;</code>
+<code>}</code>
+
+<code>#solution-scroll{</code>
+<code>    overflow: scroll;</code>
+<code>}</code>
+
+<code>#solution-auto{</code>
+<code>    overflow: auto;</code>
+<code>}</code></pre>
+        <h2>Text overflow</h2>
+        <p>Como vimos con anterioridad, el texo puede ser uno de los mayores problemas con el desbordamiento, y tambien es un problema cuando queremos distribuir de mejor forma el texto, es por ello que tenemos las siguientes propiedades:</p>
+        <ul>
+            <li>whitespace: Define los saltos de linea
+                <ul>
+                    <li>normal(default): Saltos de linea automaticos</li>
+                    <li>nowrap: NO existen saltos de linea</li>
+                    <li>pre: Detecta los saltos en linea directos del codigo, pero puede desbordarse si los saltos no estan bien definidos</li>
+                    <li>pre-wrap:Respeta los saltos en linea, pero no se desborda</li>
+                </ul>
+            </li>
+            <li>text-overflow: Permite recortar el texto
+                <ul>
+                    <li>ellipsis: Inserta tres puntos ...</li>
+                    <li>clip: Recorta el texto</li>
+                </ul>
+            </li>
+            <li>word-break: Maneja el como se cortan las palabras en los parrafos
+                <ul>
+                    <li>break-all: corta las palbras y las lleva a la siguiente linea</li>
+                    <li>auto-phrase: Corta la palabra por silabas</li>
+                </ul>
+            </li>
+            <li>overflow-wrap: Maneja el como se cortan las palabras en los parrafos
+                <ul>
+                    <li>break-word: Rompe en silabas la palabra</li>
+                    <li>anywhere: Rompe en cualquier punto la palabra</li>
+                </ul>
+            </li>
+            <li>text-wrap:
+                <ul>
+                    <li>balance: Equilibra los caracteres en cada oracion para que sean parecidos</li>
+                    <li>pretty: Evita palabras huerfanas en los parrafos</li>
+                </ul>
+            </li>
+        </ul>
+        <h3>whitespace</h3>
+        <div class="example-text">
+            <div class="example-text__container">
+                <h4 class="example-text__title">Normal</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, nesciunt eius. Molestiae aspernatur quis est.</p>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">Nowrap</h4>
+                <p id="whitespace-nowrap">Exercitationem fugit perferendis corrupti nobis, molestiae dolorum numquam laborum nesciunt omnis possimus error dicta magni.</>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">Prewrap</h4>
+                <p id="whitespace-prewrap">Sapiente illo 
+itaque voluptates! 
+Fugiat error eum 
+accusantium modi 
+autem minus 
+                </p>
+            </div>
+        </div>
+        <h3>Text-overflow</h3>
+        <div class="example-text">
+            <div class="example-text__container">
+                <h4 class="example-text__title">Ellipsis</h4>
+                <p id="overflow-ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugit vitae asperiores. Omnis, nobis libero. Lorem ipsum dolor sit amet, consectetur dddfd adipisicing elit. Nihil eligendi dolores tenetur iure magnam quia, explicabo porro consectetur ipsum adipisci.
+                </p>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">Clip (default)</h4>
+                <p id="overflow-clip">Nesciunt alias omnis mollitia inventore laboriosam perspiciatis, saepe voluptates assumenda cumque iste voluptate dolor minus!</p>
+            </div>
+        </div>
+        <h3>word-break</h3>
+        <div class="example-text">
+            <div class="example-text__container">
+                <h4 class="example-text__title">break-all</h4>
+                <p id="wordbreak-break-all">Hola, estoy escribiendo un texto para que podamos apreciar como se cortan las palabras sin importar si se termino o no</p>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">auto-phrase</h4>
+                <p id="wordbreak-auto-phrase">Sunt doloribus numquam obcaecati fugiat perferendis maiores quis natus dolores mollitia. Odit dignissimos corrupti tempora.</p>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">default</h4>
+                <p>Sunt doloribus numquam obcaecati fugiat perferendis maiores quis natus dolores mollitia. Odit dignissimos corrupti tempora.</p>
+            </div>
+        </div>
+        <h3>overflow-wrap</h3>
+        <div class="example-text">
+            <div class="example-text__container">
+                <h4 class="example-text__title">break-word</h4>
+                <p id="overflow-wrap-breakword">Hola, estoy escribiendo un texto para que podamos apreciar como se cortan las palabras sin importar si se termino o no</p>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">anywhere</h4>
+                <p id="overflow-wrap-anywhere">Hola, estoy escribiendo un texto para que podamos apreciar como se cortan las palabras sin importar si se termino o no</p>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">default</h4>
+                <p>Amet reiciendis optio illo recusandae soluta perspiciatis consequuntur architecto distinctio facere, similique, itaque ducimus repudiandae.</p>
+            </div>
+        </div>
+        <h3>balance</h3>
+        <div class="example-text">
+            <div class="example-text__container">
+                <h4 class="example-text__title">Balance</h4>
+                <p id="text-wrap-balance">Equilibra los caracteres en cada oracion para que sean parecidos</p>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">Pretty</h4>
+                <p id="text-wrap-pretty">Evita palabras huerfanas en los parrafos, como por ej este</p>
+            </div>
+            <div class="example-text__container">
+                <h4 class="example-text__title">default</h4>
+                <p>Evita palabras huerfanas en los parrafos, como por ej este</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

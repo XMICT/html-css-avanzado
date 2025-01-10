@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../root.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Herencia</h1>
+        <p>La herencia es el traspaso de propiedades a un elemento hijo, en un elemento se puede especificar si se necesita utilizar o no herencia, el valor por defecto para los atributos inherit</p>
+        <h2>Posibles propiedades para asignar a los atributos</h2>
+        <hr>
+        <ul>
+            <li class="herencia__inherit"><strong>inherit</strong>: Tomara el valor heredado de cualquier elemento padre</li>
+            <li class="herencia__initial"><strong>initial</strong>: Tomara el valor inicial o el valor por defecto del navegador</li>
+            <div>
+                <li class="herencia__unset"><strong>unset</strong>: Restablece el su valor a inicial si no se encuentra la propiedad en el padre directo</li>
+            </div>
+            <li class="herencia__revert"><strong>revert</strong>: Busca los estilos del navegador</li>
+        </ul>
+        <section class="text-area">
+            <textarea 
+                class="text-area__inherit" 
+                placeholder="Deja tu mensaje">
+            </textarea>
+            <textarea 
+                class="text-area__normal" 
+                id="" 
+                placeholder="Deja tu mensaje">
+            </textarea>
+        </section>
+    </main>
+</body>
+</html>

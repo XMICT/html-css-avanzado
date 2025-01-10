@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../root.css">
+    <title>Document</title>
+    <style>
+        body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 24px;
+        }
+        .images{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .images__container{
+            flex: 1;
+            min-width: 0;
+            margin-bottom: 16px;
+            border: 1px solid white;
+            height: 30vh;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 24px;
+        }
+
+        .images__container > img{
+            flex: 1;
+            height: min-content;
+            border: 1px solid rgb(255, 187, 0);
+            width: 90%;
+        }
+
+        #img-1{
+            object-fit: contain;
+        }
+        #img-2{
+            object-fit: cover;
+        }
+        #img-3{
+            object-fit: none;
+        }
+        #img-4{
+            object-fit: cover;
+            object-position: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Object fit</h1>
+    <p>La propiedad object fit es parecida al background, con la diferencia que esta aplica para elementos con la etiqueta imagen</p>
+    <ul>
+        <li>object-fit:
+            <ul>
+                <li>contain: Aleja la imagen para que pueda visualizarse toda</li>
+                <li>cover: Hace zoom en la imagen para que abarque tanto el width y height</li>
+                <li>none: se basa de la resolucion de la imagen original para mostrarse</li>
+                <li>scale-down: Compara el tamaño de la imagen original con la declarada en el css y se queda con la medida mas pequeña</li>
+            </ul>
+        </li>
+        <li></li>
+    </ul>
+    <h2>Ejemplo</h2>
+    <div class="images">
+        <div class="images__container">
+            <h3 class="images__title">object-fit: contain</h3>
+            
+            <img id="img-1" src="../../../assets/images/black-panther.webp" alt="">
+        </div>
+        <div class="images__container">
+            <h3 class="images__title">object-fit: cover;</h3>
+            
+            <img id="img-2" src="../../../assets/images/black-panther.webp" alt="">
+        </div>
+    </div>
+    <div class="images">
+        <div class="images__container">
+            <h3 class="images__title">object-fit: none;</h3>
+            
+            <img id="img-3" src="../../../assets/images/black-panther.webp" alt="">
+        </div>
+        <div class="images__container">
+            <h3 style="overflow: hidden; max-width: 90%; white-space: nowrap; text-overflow: ellipsis;" class="images__title">object-fit: cover; + object-position: right;</h3>
+            
+            <img id="img-4" src="../../../assets/images/black-panther.webp" alt="">
+        </div>
+    </div>
+</body>
+</html>

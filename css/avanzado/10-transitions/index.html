@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: #1a1a1a;
+            color: #dadada;
+            margin: 0;
+            padding: 12px;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+
+        .box-transitions{
+            border-radius: 4px;
+            width: 100px;
+            height: 100px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 12px;
+        }   
+
+        .transition-bg{
+            background-color: #600;
+            transition: background-color 500ms linear 500ms;
+
+        }
+
+        .transition-position{
+            background-color: #060;
+            position: relative;
+            left: 0;
+            transition-property: left;
+            transition-duration: 1s;
+            transition-delay: 500ms;
+            transition-timing-function: ease;
+        }
+
+        body:hover .transition-bg{
+            background-color: #060;
+        }
+
+        body:hover .transition-position{
+            left: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Transitions</h1>
+    <hr>
+    <p>Las transiciones son animaciones que pueden aplicarse a las propiedades de un elemento cuando sucede un evento, como el fondo, el tamaño etc.</p>
+    <h2>Ejemplo</h2>
+    <div class="box-transitions transition-bg">
+        <h3>Background</h3>
+    </div>
+    <div class="box-transitions transition-position">
+        <h3>Position</h3>
+    </div>
+
+    <h2>Codigo</h2>
+    <pre>
+<code>.transition-bg{</code>
+<code>    background-color: #600;</code>
+<code>    transition: background-color 500ms linear 500ms;
+<code>}<code>
+
+<code>.transition-position{</code>
+<code>    background-color: #060;</code>
+<code>    position: relative;</code>
+<code>    left: 0;</code>
+<code>    transition-property: left;</code>
+<code>    transition-duration: 1s;</code>
+<code>    transition-delay: 500ms;</code>
+<code>    transition-timing-function: ease;</code>
+<code>}</code>
+    </pre>
+</body>
+</html>

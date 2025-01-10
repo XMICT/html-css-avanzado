@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../root.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <h1>Selectores</h1>
+        <p>Los selectores son la forma de seleccionar elementos en el DOM para aplicarles estilos.</p>
+
+
+        <h2>Ejemplos</h2>
+
+        <hr>
+        <h3>Selector por atributo</h3>
+        <p>Selecciona todos los elementos que tengan el atributo yo.png</p>
+        <img src="../../../assets/images/Yo.png" alt="">
+        <img src="../../../assets/images/banner.png" alt="">
+        <p>Ejemplo: </p>
+        <pre>
+img[src$=".png"] {
+    border: 1px solid red;
+}
+</pre>
+<hr>
+
+        <h3>Selectores para hijos</h3>
+        <p>Selecciona todos los elementos que sean hijos y nietos de un elemento</p>
+        <section>
+            <p>El section tendra un estilo para que todos sus hijos y nietos<span style="font-weight: 600;"> li </span>tengan el mismo color. Pero si uno de estos elementos se encasilla en un div y se le asigna un selector con hijo directo, este ahora sera el nuevo color.</p>
+            <ul>
+                <li>Elemento nieto de section</li>
+            </ul>
+            <li>Elemento hijo directo de section</li>
+        </section>
+
+        <p>Ejemplo: </p>
+        <pre>section p{
+    color: #f00;
+}
+
+div > p{
+    color: #0f0;
+}
+        </pre>
+        <h3>Selectores adyacentes cercano al siguiente</h3>
+        <p>Selecciona todos los elementos que sean adyacentes (hermanos cercano siguiente) a otro elemento</p>
+        <section>
+            <a href="">Elemento ejemplo</a>
+            <p>Elemento adyacente del enlace</p>
+            <p>Elemento no adyacente del enlace</p>
+        </section>
+        <p>Ejemplo: </p>
+        <pre>a + p {
+    color: #00f;
+}
+</pre>
+        <h3>Selectores adyacentes</h3>
+        <p>Selecciona todos los elementos que sean adyacentes (hermanos) a otro elemento</p>
+        <section>
+            <span>Elemento ejemplo</span>
+            <br>
+            <p>Elemento adyacente</p>
+            <p>Elemento adyacente del enlace</p>
+            <p>Elemento no adyacente del enlace</p>
+        </section>
+        <p>Ejemplo: </p>
+        <pre>br ~ p {
+    color: #f0f;
+}
+        </pre>
+    </main>
+</body>
+</html>

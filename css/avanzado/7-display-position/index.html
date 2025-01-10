@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display y position</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        h4, h5, h6{
+            margin: 8px 0;
+        }
+
+        body{
+            font-family: 'poppins';
+            background-color: #1a1a1a;
+            color: #cfcfcf;
+            font-size: 16px;
+            padding: 24px;
+        }
+
+        strong{
+            color: #ff8f00;
+        }
+
+        .examples{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .examples > div {
+            flex: 1;
+            min-width: 45%;
+            background-color: #2a2a2a;
+            padding: 4px 16px;
+            border-radius: 8px;
+        }
+
+        .examples p {
+            margin: 8px 0;
+        }
+
+        .inline__example{
+            display: inline;
+            background-color: #1a1a1a;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display y position</h1>
+    <p>Display y position son propiedades que nos permiten controlar la forma en la que los elementos se muestran en la página.</p>
+    <h2>Display</h2>
+    <p>La propiedad display nos permite controlar la forma en la que los elementos se muestran en la página. Algunos valores de display son:</p>
+    <ul>
+        <li><strong>block</strong>: Hace que el elemento se muestre como un bloque, ocupando todo el ancho disponible.</li>
+        <li><strong>inline</strong>: Hace que el elemento se muestre en línea, ocupando solo el espacio que necesita.</li>
+        <li><strong>inline-block</strong>: Hace que el elemento se muestre en línea, pero permite aplicar márgenes y padding.</li>
+        <li><strong>flex</strong>: Hace que el elemento se muestre como un contenedor flexible.</li>
+        <li><strong>grid</strong>: Hace que el elemento se muestre como un contenedor de cuadrícula.</li>
+    </ul>
+    <h3>Ejemplo</h3>
+    <section class="examples">
+        <div class="examples__inline">
+            <h4>Elementos en linea</h4>
+            <hr>
+            <p class="inline__example">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptas.</p>
+            <p class="inline__example">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nam?</p>
+            <br>
+            <br>
+            <h5>Nota:</h5>
+            <p>Los elementos inline nunca van a respetar el alto del contenedor, por mas que se incialice un margin o padding</p>
+        </div>
+        <div class="examples__block">
+            <h4>Elementos en bloque</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nam?</p>
+        </div>
+        <div class="examples__block">
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nam?</p>
+        </div>
+        <div class="examples__block">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptas.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, nam?</p>
+        </div>
+    </section>
+    <hr>
+    <h2>Position</h2>
+    <p>La propiedad position nos permite controlar la posición de los elementos en la página. Algunos valores de position son:</p>
+    <ul>
+        <li><strong>static</strong>: Hace que el elemento se muestre en la posición en la que aparece en el flujo del documento.</li>
+        <li><strong>relative</strong>: Hace que el elemento se muestre en la posición en la que aparece en el flujo del documento, pero permite moverlo con las propiedades top, right, bottom y left.</li>
+        <li><strong>absolute</strong>: Hace que el elemento se muestre en la posición en la que aparece en el flujo del documento, pero permite moverlo con las propiedades top, right, bottom y left, tomando como referencia el elemento padre más cercano con una posición diferente a static.</li>
+        <li><strong>fixed</strong>: Hace que el elemento se muestre en la posición en la que aparece en el flujo del documento, pero permite moverlo con las propiedades top, right, bottom y left, tomando como referencia la ventana del navegador.</li>
+        <li><strong>sticky</strong>: Hace que el elemento se muestre en la posición en la que aparece en el flujo del documento, pero permite moverlo con las propiedades top, right, bottom y left, tomando como referencia el elemento padre más cercano con una posición diferente a static, y se queda fijo cuando se hace scroll.</li>
+    </ul>
+</body>
+</html>

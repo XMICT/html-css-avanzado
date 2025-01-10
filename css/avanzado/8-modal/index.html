@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modals</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 0 12px;
+        }
+
+        p {
+            color: #dfdfdf;
+        }
+
+        .modal{
+            position: absolute;
+            width: 100vw;
+            height: 100vh;
+            background-color: #0a0a0abb;
+
+            top: 0;
+            left: 0;
+
+            display: none;
+            align-items: center;
+        }
+
+        .modal__content{
+            position: relative;
+            background-color: #0a0a0a;
+            padding: 12px 24px;
+            border-radius: 12px;
+            margin: 0 24px;
+        }
+
+        .new-modal{
+            background-color: #1a1a1a;
+        }
+
+        .modal__btn-close{
+            aspect-ratio: 1/1;
+            background-color: #1a1a1a;
+            color: white;
+            padding: 0 12px;
+            border: none;
+            border-radius: 8px;
+
+            position: absolute;
+            top: 30px;
+            right: 24px;
+
+            cursor: pointer;
+        }
+
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header__container > button {
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid white;
+            color: white;
+            background-color: transparent;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Modals</h1>
+        <div class="header__container">
+            <button class="header__open-traditional">Traditional Modal</button>
+            <button class="header__open-new">New Modal</button>
+        </div>
+    </header>
+    <div class="modal">
+        <div class="modal__content">
+            <h2 class="modal__title">Modal de prueba</h2>
+            <hr>
+            <p class="modal__body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus ipsam blanditiis accusantium amet, reiciendis temporibus sint repellendus eligendi architecto laboriosam mollitia placeat hic non unde, quibusdam delectus velit voluptas vitae sequi ea commodi ex. Sapiente eos corporis atque! Maiores commodi voluptates atque aliquid. Minus itaque vel magnam quo vitae?</p>
+            <button class="modal__btn-close">X</button>
+        </div>
+    </div>
+    <dialog class="new-modal">
+        <h2 class="new-modal__title">new-modal de prueba</h2>
+        <hr>
+        <p class="new-modal__body"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo accusamus ipsam blanditiis accusantium amet, reiciendis temporibus sint repellendus eligendi architecto laboriosam mollitia placeat hic non unde, quibusdam delectus velit voluptas vitae sequi ea commodi ex. Sapiente eos corporis atque! Maiores commodi voluptates atque aliquid. Minus itaque vel magnam quo vitae?</p>
+        <form>
+            <button class="new-modal__btn-close">X</button>
+        </form>
+    </dialog>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores voluptatum voluptatibus blanditiis dolor eum ipsum esse ad beatae excepturi vitae, exercitationem repellendus obcaecati minima laborum, dicta recusandae facere natus a nobis! Possimus praesentium voluptatibus quis iure alias beatae quidem illo veniam fugiat odio! Rem temporibus quidem itaque dolores ducimus alias rerum provident iusto perferendis expedita. Deserunt soluta neque explicabo rem laborum! Ut veniam illum consequatur ea vel, culpa necessitatibus eveniet illo? Sed architecto suscipit eveniet cupiditate. Reiciendis quia numquam quaerat accusamus. Accusantium cupiditate veritatis atque consectetur maiores quo accusamus vero harum facere expedita? Officia omnis corporis iure, nulla quam doloremque tenetur suscipit laborum id dolor, beatae consectetur consequatur assumenda. Qui animi neque, adipisci possimus corporis hic enim voluptate dolore eligendi aut omnis necessitatibus mollitia error autem soluta, voluptates nobis vitae culpa distinctio amet. Quaerat vel mollitia magni. Ullam, inventore! Ipsa, qui? Repellendus cumque animi necessitatibus deleniti consequatur pariatur nam quo? Amet, perferendis reiciendis? Eum, quis! Inventore, esse! Tenetur magnam expedita omnis reiciendis alias labore ex, consequuntur doloribus officia veritatis ut voluptate saepe aut porro ad. Repudiandae nemo labore excepturi omnis nihil vitae. Recusandae consequuntur beatae nisi voluptas excepturi cumque exercitationem, labore saepe, ratione, architecto tempora. In ut quod earum vel perferendis dolor natus excepturi ea ratione vitae nisi facilis, est sint laborum repellat aut quis. Voluptates animi velit, sit magnam quia nulla quibusdam est numquam rem! Consequatur repudiandae sunt esse repellendus odio corporis ex molestias. Quisquam, modi. Quia ipsum commodi a. Nihil eaque magnam repellat placeat neque, aspernatur aliquam quis reprehenderit hic laboriosam atque autem perspiciatis nesciunt soluta minus animi vero? Hic numquam ratione temporibus illum maxime quod quibusdam quia quaerat nihil fugit fuga aliquam, nobis quos obcaecati unde aut, corrupti consectetur dicta! Ut explicabo deleniti dignissimos non numquam alias nihil, excepturi accusamus tempora nobis, voluptatibus eligendi tempore ipsa, quia rem obcaecati iste sapiente nam. Culpa porro adipisci fuga, tenetur ipsa reprehenderit nemo aliquid fugit nesciunt atque minus corrupti. Soluta ducimus at aliquam illum asperiores earum sint labore magni unde minima quidem qui, quia omnis similique recusandae. Totam ea quas expedita pariatur, voluptate recusandae sit suscipit possimus illo. Est odit velit perspiciatis earum deserunt esse doloribus aspernatur voluptate soluta odio error officiis placeat, porro consequatur dolorum? Officiis impedit numquam illo quam consectetur labore at esse corrupti adipisci distinctio delectus sit molestias, aperiam neque doloremque itaque enim, vero, sequi voluptate dolorem velit cum? Deserunt quas mollitia atque sunt saepe. Distinctio odit necessitatibus ut perferendis asperiores, saepe facilis labore totam mollitia unde et, molestias atque nulla veritatis quas autem, dolorem modi inventore expedita esse magni est corrupti. Nisi officia soluta praesentium molestias alias molestiae quo ullam dolorem commodi itaque, beatae eaque tempore possimus quam quis? Debitis asperiores facilis, natus, sapiente esse voluptatem corporis quia sunt praesentium veniam recusandae nam ratione? Veniam, voluptatibus? Voluptate ipsam quod in molestiae fugit aut quidem. Explicabo, modi. Dolorum nam, quos possimus, laborum, animi sit non quas aut fugit perspiciatis optio! Magni soluta saepe veniam recusandae at quo praesentium hic est, iste nam libero exercitationem velit ducimus sit.</p>
+
+    <script>
+        const modal = document.querySelector('.modal');
+        const newModal = document.querySelector('.new-modal');
+        const btnCloseModal = document.querySelector('.modal__btn-close')
+        const btnTraditional = document.querySelector('.header__open-traditional');
+        const btnNew = document.querySelector('.header__open-new');
+
+        btnCloseModal.addEventListener('click', () => {
+            modal.style.display = 'none';
+        })
+
+        btnTraditional.addEventListener('click', () => {
+            modal.style.display = 'flex';
+        })
+        btnNew.addEventListener('click', () => {
+            newModal.style.display = 'flex';
+        })
+
+
+
+    </script>
+</body>
+</html>

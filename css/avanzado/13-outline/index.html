@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../root.css">
+    <title>Document</title>
+
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        .container-outline{
+            width: 400px;
+            height: 200px;
+            margin: 0 auto;
+            padding: 0px;
+            background-color: #050;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+            border: 1px solid white;
+            border-radius: 12px;
+            outline: 10px solid #500;
+        }
+
+        .container__desc, .container__desc--outline{
+            position: absolute;
+            left: 5px;
+            top: 45%;
+            margin: 0;
+        }
+
+        .container__desc--outline{
+            left: -100px;
+        }
+
+        .cards{
+            display: flex;
+            background-color: #000;
+            gap: 10px;
+        }
+
+        .card{
+            height: 200px;
+            background-color: #008;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Outline</h1>
+    <hr>
+    <p>
+        Outline es una propiedad de los elementos HTML que crea un contorno que a diferencia de border, este no afecta el tamaño del contenedor, es muy util para hacer efectos de enfoque a los elementos.
+    </p>
+    <br>
+    <div class="container-outline">
+        <h3>Ejemplo</h3>
+        <p class="container__desc"><-border</p>
+        <p class="container__desc--outline"> outline--> </p>
+    </div>
+    <h2>Ejemplos de uso</h2>
+    <div class="cards">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+
+</body>
+</html>
